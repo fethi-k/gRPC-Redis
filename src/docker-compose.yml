@@ -1,0 +1,29 @@
+version: "3.7"
+
+services: 
+    
+    client:
+        build: client/
+        container_name: grpc_client_container
+        network_mode: host
+        depends_on:
+            - server
+
+    server:
+        build: .
+        container_name: grpc_server_container
+        ports: 
+            - "4040:4040"
+        depends_on:
+            - redis
+        
+    redis:
+        container_name: redis_container
+        image: redis
+    
+    
+        
+
+
+        
+        

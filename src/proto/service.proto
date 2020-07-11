@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "github.com/monkrus/grpc-from0;grpc_from0";
+
+service GrpcService {
+    rpc RecordDB(SetPerson) returns (ServerResponse);
+    rpc GetRecordDB(GetPerson) returns (ServerResponse);
+}
+
+message SetPerson{
+    string key = 1;
+    string value = 2;
+}
+
+message GetPerson{
+    string key = 1;
+}
+
+message ServerResponse{
+    bool success = 1;
+    string value = 2;
+    string error = 3;
+}
