@@ -16,3 +16,10 @@ Server kurulumu client kurulumundan uzun sürdüğü için server container'ın�
 gRPC server 4040 portunu dinliyor...
 ```
 mesajından sonra client container'ı tekrar başlatıp sonuçları görebilirsiniz.
+
+# Düzeltme
+Yukarıdaki hatayı düzeltmek amacıyla docker-compose içerisindeki client altına 
+```
+restart: on-failure
+```
+satırını ekledim. Böylece server tarafı hazır olana dek client yeniden başlatılacak ve her şey düzgün çalıştığında sonuçlar gözükecek.
