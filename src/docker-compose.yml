@@ -6,6 +6,7 @@ services:
         build: client/
         container_name: grpc_client_container
         network_mode: host
+        restart: on-failure
         depends_on:
             - server
 
