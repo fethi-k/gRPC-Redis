@@ -17,7 +17,7 @@ gRPC server 4040 portunu dinliyor...
 ```
 mesajından sonra client container'ı tekrar başlatıp sonuçları görebilirsiniz.
 
-# Düzeltme
+# --Düzeltme--
 Yukarıdaki hatayı düzeltmek amacıyla docker-compose içerisindeki client altına 
 ```
 restart: on-failure
