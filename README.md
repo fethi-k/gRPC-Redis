@@ -5,7 +5,7 @@ gRPC istemci ve gRPC sunucu kullanarak Redis veritabanına kayıt işlemi.
 > [Docker for Windows](https://docs.docker.com/docker-for-windows/install/) indir ve kur.
 
 # Çalıştırmak İçin
-Proje klasörüne git ve
+Proje klasöründe /src git ve
 ```
 docker-compose build
 docker-compose up
